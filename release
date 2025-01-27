@@ -1,0 +1,41 @@
+{
+  "app":"happ_desktop",
+  "linux": {
+    "block": [],
+    "blockcanskip": [],
+    "beta": {},
+    "stable": {}
+  },
+  "macos": {
+    "block": [],
+    "blockcanskip": [],
+    "beta": {},
+    "stable": {}
+  },
+  "windows": {
+    "block": [
+      "0.0.9"
+    ],
+    "blockcanskip": [
+      "0.0.8"
+    ],
+    "beta": {
+      "version": "0.0.9",
+      "link": "https://github.com/Flyfrog-LLC/Happ-Desktop-Release/releases/latest/download/Happ.win.x86.alpha.7z",
+      "details": "",
+      "update": {
+        "warnalways": "0.0.9",
+        "updateonly": "0.0.9"
+      }
+    },
+    "stable": {
+      "version": "0.0.9",
+      "link": "https://github.com/Flyfrog-LLC/Happ-Desktop-Release/releases/latest/download/Happ.win.x86.alpha.7z",
+      "details": "",
+      "update": {
+        "warnalways": "0.0.9",
+        "updateonly": "0.0.9"
+      }
+    }
+  }
+}
