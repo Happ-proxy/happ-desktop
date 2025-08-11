@@ -1,52 +1,36 @@
 {
   "app":"happ_desktop",
+  "filenum": 10,
   "linux": {
     "block": [],
-    "blockcanskip": [],
     "beta": {},
     "stable": {}
   },
   "macos": {
     "block": [],
-    "blockcanskip": [],
     "beta": {},
     "stable": {}
   },
   "windows": {
     "block": [
-      "0.0.9",
-	  "0.0.10",
-	  "0.0.11",
-	  "0.0.12",
-	  "0.0.13",
-	  "0.0.14",
-	  "0.0.15",
-	  "0.0.16",
-	  "0.0.17",
-	  "0.0.18",
-	  "0.0.19",
-	  "0.0.20",
-	  "0.0.21",
-	  "0.0.22",
-    ],
-    "blockcanskip": [
-      "0.0.8"
+      "0.0.4",
+	  "0.0.3"
     ],
     "beta": {
-      "version": "0.0.9",
-      "link": "https://github.com/Flyfrog-LLC/Happ-Desktop-Release/releases/latest/download/Happ.win.x86.alpha.7z",
-      "details": "",
+      "version": "0.2.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.3_alpha/setup-Happ.x86.exe",
+      "details": "-Improved the performance and general UX of subscription / server list\n-New logging cleaning mechanism\n-Remote control support",
       "update": {
-        "warnalways": "0.0.9",
+        "warnalways": "0.2.0",
         "updateonly": "0.0.9"
       }
     },
     "stable": {
       "version": "0.0.9",
-      "link": "https://github.com/Flyfrog-LLC/Happ-Desktop-Release/releases/latest/download/Happ.win.x86.alpha.7z",
-      "details": "",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe",
+      "details": "-Improved the performance and general UX of subscription / server list\n-New logging cleaning mechanism\n-Remote control support",
       "update": {
-        "warnalways": "0.0.9",
+        "warnalways": "0.2.0",
         "updateonly": "0.0.9"
       }
     }
