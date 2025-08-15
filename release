@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 10,
+  "filenum": 11,
   "linux": {
     "block": [],
     "beta": {},
@@ -26,11 +26,11 @@
       }
     },
     "stable": {
-      "version": "0.2.5",
+      "version": "0.2.6",
       "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.5_alpha/setup-Happ.x86.exe",
       "details": "-Test update",
       "update": {
-        "warnalways": "0.2.4",
+        "warnalways": "0.3.4",
         "updateonly": "0.0.9"
       }
     }
