@@ -26,7 +26,7 @@
       }
     },
     "stable": {
-      "version": "0.2.6",
+      "version": "0.2.5",
       "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.5_alpha/setup-Happ.x86.exe",
       "details": "-Test update",
       "update": {
