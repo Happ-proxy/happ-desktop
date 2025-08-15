@@ -26,11 +26,11 @@
       }
     },
     "stable": {
-      "version": "0.0.9",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe",
-      "details": "-Improved the performance and general UX of subscription / server list\n-New logging cleaning mechanism\n-Remote control support",
+      "version": "0.2.5",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.5_alpha/setup-Happ.x86.exe",
+      "details": "-Test update",
       "update": {
-        "warnalways": "0.2.0",
+        "warnalways": "0.2.4",
         "updateonly": "0.0.9"
       }
     }
