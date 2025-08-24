@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 11,
+  "filenum": 12,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,21 +17,21 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "0.2.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.3_alpha/setup-Happ.x86.exe",
-      "details": "-Improved the performance and general UX of subscription / server list\n-New logging cleaning mechanism\n-Remote control support",
+      "version": "0.2.6",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.6_alpha/setup-Happ.x86.exe",
+      "details": "-Enhanced error handling for geo routing and subscriptions\n-Added toggle to enable/disable collapsible subscription sections\n-Fixed installation/uninstallation cleanup processes",
       "update": {
-        "warnalways": "0.2.0",
-        "updateonly": "0.0.9"
+        "warnalways": "0.2.4",
+        "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "0.2.5",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.5_alpha/setup-Happ.x86.exe",
-      "details": "-Test update",
+      "version": "0.2.6",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.6_alpha/setup-Happ.x86.exe",
+      "details": "-Enhanced error handling for geo routing and subscriptions\n-Added toggle to enable/disable collapsible subscription sections\n-Fixed installation/uninstallation cleanup processes",
       "update": {
-        "warnalways": "0.3.4",
-        "updateonly": "0.0.9"
+        "warnalways": "0.2.4",
+        "updateonly": "0.0.21"
       }
     }
   }
