@@ -4,7 +4,7 @@
 | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
 | [App Store](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215) | [Google Play](https://play.google.com/store/apps/details?id=com.happproxy)                             | Windows: [alpha](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe)        |
 | [Testflight](https://testflight.apple.com/join/XMls6Ckd)                   | [Download APK](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk)           | macOS(arm64/intel): [alpha](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.macOS.universal.app.tar.gz)|
-|                                                                            | [Download Beta APK](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ_beta.apk) | Linux: [alpha](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x86.AppImage.zip) |
+|                                                                            | [Download Beta APK](https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ_beta.apk) | Linux: [alpha](https://github.com/Happ-proxy/happ-desktop/releases/latest/download/Happ.linux.x86.AppImage) |
 
 Happ is a mobile application designed for convenient proxy server management, powered by the robust Xray core. The app features an intuitive interface and a range of useful functions, making it an essential tool for managing connections.
 
