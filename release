@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 12,
+  "filenum": 14,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "0.2.6",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.6_alpha/setup-Happ.x86.exe",
-      "details": "-Enhanced error handling for geo routing and subscriptions\n-Added toggle to enable/disable collapsible subscription sections\n-Fixed installation/uninstallation cleanup processes",
+      "version": "0.3.5",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.3.5/setup-Happ.x86.exe",
+      "details": "-tray menu style fixies\n-light mode improvements\n-add tunnel dns options",
       "update": {
         "warnalways": "0.2.4",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "0.2.6",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/0.2.6_alpha/setup-Happ.x86.exe",
-      "details": "-Enhanced error handling for geo routing and subscriptions\n-Added toggle to enable/disable collapsible subscription sections\n-Fixed installation/uninstallation cleanup processes",
+      "version": "0.3.5",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.3.5/setup-Happ.x86.exe",
+      "details": "-tray menu style fixies\n-light mode improvements\n-add tunnel dns options",
       "update": {
         "warnalways": "0.2.4",
         "updateonly": "0.0.21"
