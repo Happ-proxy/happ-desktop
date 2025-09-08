@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 15,
+  "filenum": 16,
   "linux": {
     "block": [],
     "beta": {},
@@ -21,7 +21,7 @@
       "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.3.6/setup-Happ.x86.exe",
       "details": "-tray menu style fixies\n-light mode improvements\n-add tunnel dns options\n-update core to 25.8.3",
       "update": {
-        "warnalways": "0.1.4",
+        "warnalways": "0.3.5",
         "updateonly": "0.0.21"
       }
     },
@@ -30,7 +30,7 @@
       "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.3.6/setup-Happ.x86.exe",
       "details": "-tray menu style fixies\n-light mode improvements\n-add tunnel dns options\n-update core to 25.8.3",
       "update": {
-        "warnalways": "0.1.4",
+        "warnalways": "0.3.5",
         "updateonly": "0.0.21"
       }
     }
