@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 18,
+  "filenum": 17,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,20 +17,20 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "0.4.0",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.4.0/setup-Happ.x86.exe",
-      "details": "-Fixed server import issues\n-Improved subscription management\n-Added support for additional connection protocols",
+      "version": "0.3.7",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.3.7/setup-Happ.x86.exe",
+      "details": "-fix parse fragment\n-add support httpupgrade\n-add custom-tunnel-config meta params",
       "update": {
-        "warnalways": "0.3.8",
+        "warnalways": "0.3.6",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "0.4.0",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.4.0/setup-Happ.x86.exe",
-      "details": "-Fixed server import issues\n-Improved subscription management\n-Added support for additional connection protocols",
+      "version": "0.3.7",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.3.7/setup-Happ.x86.exe",
+      "details": "-fix parse fragment\n-add support httpupgrade\n-add custom-tunnel-config meta params",
       "update": {
-        "warnalways": "0.3.8",
+        "warnalways": "0.3.6",
         "updateonly": "0.0.21"
       }
     }
