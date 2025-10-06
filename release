@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 18,
+  "filenum": 19,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "0.4.6",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.4.6/setup-Happ.x86.exe",
-      "details": "-tun2proxy updated to version 0.7.15 with 32-bit support\n-Fixed JSON config clipboard pasting\n-Fixed dialog scaling and responsiveness issues",
+      "version": "0.5.6",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.5.6/setup-Happ.x86.exe",
+      "details": "-Improved TUN connection startup performance\n-Improved UI scaling and layout at higher display scales\n-Improved text display and wrapping in dialogs",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "0.4.6",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.4.6/setup-Happ.x86.exe",
-      "details": "-tun2proxy updated to version 0.7.15 with 32-bit support\n-Fixed JSON config clipboard pasting\n-Fixed dialog scaling and responsiveness issues",
+      "version": "0.5.6",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.5.6/setup-Happ.x86.exe",
+      "details": "-Improved TUN connection startup performance\n-Improved UI scaling and layout at higher display scales\n-Improved text display and wrapping in dialogs",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
