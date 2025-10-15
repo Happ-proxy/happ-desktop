@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 19,
+  "filenum": 20,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "0.5.6",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.5.6/setup-Happ.x86.exe",
-      "details": "-Improved TUN connection startup performance\n-Improved UI scaling and layout at higher display scales\n-Improved text display and wrapping in dialogs",
+      "version": "0.6.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.6.0/setup-Happ.x86.exe",
+      "details": "Improved UI scaling, responsiveness, CONNECT button layout, routing profile names for long text, date/time formatting by app language, diagnostic report encoding, startup reliability with auto backup/restore.\nAdded UI scaling hotkey (Ctrl+Wheel / Cmd+Wheel), Statistics page counters, auto geo file downloads for routing profiles, strict routing profile validation, confirmation for removing subscriptions, 'Clean logs' in Logs menu, 'Scroll to end' button in Logs, support for 'ping-result' premium parameter.\nFixed localization issues, subscription title editing, clipboard/QR visibility after reset, routing without geo files, IP type from meta, protocol case (Trojan -> TROJAN), server duplication/selection on restart, blocked subscriptions display, startup crash with 'Ping on open', POWER button when no subscriptions, .happ file deep links, popup icons (Info/Error), support URL validation, selected server save/restore.",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "0.5.6",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.5.6/setup-Happ.x86.exe",
-      "details": "-Improved TUN connection startup performance\n-Improved UI scaling and layout at higher display scales\n-Improved text display and wrapping in dialogs",
+      "version": "0.6.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/alpha_0.6.0/setup-Happ.x86.exe",
+      "details": "Improved UI scaling, responsiveness, CONNECT button layout, routing profile names for long text, date/time formatting by app language, diagnostic report encoding, startup reliability with auto backup/restore.\nAdded UI scaling hotkey (Ctrl+Wheel / Cmd+Wheel), Statistics page counters, auto geo file downloads for routing profiles, strict routing profile validation, confirmation for removing subscriptions, 'Clean logs' in Logs menu, 'Scroll to end' button in Logs, support for 'ping-result' premium parameter.\nFixed localization issues, subscription title editing, clipboard/QR visibility after reset, routing without geo files, IP type from meta, protocol case (Trojan -> TROJAN), server duplication/selection on restart, blocked subscriptions display, startup crash with 'Ping on open', POWER button when no subscriptions, .happ file deep links, popup icons (Info/Error), support URL validation, selected server save/restore.",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
