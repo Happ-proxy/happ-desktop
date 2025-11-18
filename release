@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 21,
+  "filenum": 22,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "1.0.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.0.1/setup-Happ.x86.exe",
-      "details": "-Fixed geo file download error dialog flow\n-Improved startup time\n-update Xray 25.9.11",
+      "version": "1.0.2",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.0.2/setup-Happ.x86.exe",
+      "details": "-Added HTTP header obfuscation support for VMESS, VLESS, Trojan protocols\n-Fixed Trojan/WebSocket TLS configuration that was missing the host parameter\n-Fixed IPv6 notation parsing in routing profile rules",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "1.0.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.0.1/setup-Happ.x86.exe",
-      "details": "-Fixed geo file download error dialog flow\n-Improved startup time\n-update Xray 25.9.11",
+      "version": "1.0.2",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.0.2/setup-Happ.x86.exe",
+      "details": "-Added HTTP header obfuscation support for VMESS, VLESS, Trojan protocols\n-Fixed Trojan/WebSocket TLS configuration that was missing the host parameter\n-Fixed IPv6 notation parsing in routing profile rules",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
