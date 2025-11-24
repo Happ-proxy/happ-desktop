@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 23,
+  "filenum": 24,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,7 +17,7 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "1.2.0",
+      "version": "1.2.2",
       "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
       "details": "-Fixed config/connection handling for VLESS/Trojan and REALITY (gRPC) configurations\n-Fixed navigation arrow (chevrons) display for local subscription servers\n-Fixed proxy statistics page not showing data correctly",
       "update": {
@@ -26,7 +26,7 @@
       }
     },
     "stable": {
-      "version": "1.2.0",
+      "version": "1.2.2",
       "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
       "details": "-Fixed config/connection handling for VLESS/Trojan and REALITY (gRPC) configurations\n-Fixed navigation arrow (chevrons) display for local subscription servers\n-Fixed proxy statistics page not showing data correctly",
       "update": {
