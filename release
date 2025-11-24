@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 22,
+  "filenum": 23,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "1.0.2",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.0.2/setup-Happ.x86.exe",
-      "details": "-Added HTTP header obfuscation support for VMESS, VLESS, Trojan protocols\n-Fixed Trojan/WebSocket TLS configuration that was missing the host parameter\n-Fixed IPv6 notation parsing in routing profile rules",
+      "version": "1.2.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
+      "details": "-Fixed config/connection handling for VLESS/Trojan and REALITY (gRPC) configurations\n-Fixed navigation arrow (chevrons) display for local subscription servers\n-Fixed proxy statistics page not showing data correctly",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "1.0.2",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/1.0.2/setup-Happ.x86.exe",
-      "details": "-Added HTTP header obfuscation support for VMESS, VLESS, Trojan protocols\n-Fixed Trojan/WebSocket TLS configuration that was missing the host parameter\n-Fixed IPv6 notation parsing in routing profile rules",
+      "version": "1.2.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
+      "details": "-Fixed config/connection handling for VLESS/Trojan and REALITY (gRPC) configurations\n-Fixed navigation arrow (chevrons) display for local subscription servers\n-Fixed proxy statistics page not showing data correctly",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
