@@ -17,7 +17,7 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "1.2.5",
+      "version": "1.2.4",
       "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
       "details": "-Added support for spiderX and show Reality parameters\n-Improved support of VLESS/Trojan with REALITY (gRPC) configurations\n-Improved OpenSSL to version 3.4 on Windows\n-Fixed server title display with Unicode escape sequences",
       "update": {
@@ -26,7 +26,7 @@
       }
     },
     "stable": {
-      "version": "1.2.5",
+      "version": "1.2.4",
       "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
       "details": "-Added support for spiderX and show Reality parameters\n-Improved support of VLESS/Trojan with REALITY (gRPC) configurations\n-Improved OpenSSL to version 3.4 on Windows\n-Fixed server title display with Unicode escape sequences",
       "update": {
