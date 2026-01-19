@@ -18,7 +18,7 @@
     ],
     "beta": {
       "version": "2.0.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.1/setup-Happ.x64.exe",
       "details": "-Add Default TUN",
       "update": {
         "warnalways": "0.3.2",
@@ -27,7 +27,7 @@
     },
     "stable": {
       "version": "2.0.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x64.exe",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.1/setup-Happ.x64.exe",
       "details": "-Add Default TUN",
       "update": {
         "warnalways": "0.3.2",
