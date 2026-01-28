@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 27,
+  "filenum": 28,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "2.0.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.1/setup-Happ.x64.exe",
-      "details": "-Add Default TUN",
+      "version": "2.0.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.3/setup-Happ.x64.exe",
+      "details": "-Add Per App Proxy",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "2.0.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.1/setup-Happ.x64.exe",
-      "details": "-Add Default TUN",
+      "version": "2.0.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.3/setup-Happ.x64.exe",
+      "details": "-Add Per App Proxy",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
