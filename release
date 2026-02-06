@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "2.0.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.3/setup-Happ.x64.exe",
-      "details": "-Add Per App Proxy",
+      "version": "2.0.5",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.5/setup-Happ.x64.exe",
+      "details": "-Improved subscription storage reliability and write safety\n-Improved per-app proxy settings description and visibility\b-Fixed System proxy and TUN toggle states not persisting across app restarts\n-Fixed DNS routing not respecting TUN DNS Enable setting\n-Fixed subscription link parameter parsing",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "2.0.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.3/setup-Happ.x64.exe",
-      "details": "-Add Per App Proxy",
+      "version": "2.0.5",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.5/setup-Happ.x64.exe",
+      "details": "-Improved subscription storage reliability and write safety\n-Improved per-app proxy settings description and visibility\b-Fixed System proxy and TUN toggle states not persisting across app restarts\n-Fixed DNS routing not respecting TUN DNS Enable setting\n-Fixed subscription link parameter parsing",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
