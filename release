@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 28,
+  "filenum": 29,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "2.0.5",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.5/setup-Happ.x64.exe",
-      "details": "-Improved subscription storage reliability and write safety\n-Improved per-app proxy settings description and visibility\b-Fixed System proxy and TUN toggle states not persisting across app restarts\n-Fixed DNS routing not respecting TUN DNS Enable setting\n-Fixed subscription link parameter parsing",
+      "version": "2.1.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.1.0/setup-Happ.x64.exe",
+      "details": "-Added Hysteria2 protocol support\n-Added context menu (Cut, Copy, Paste, Select All) for text fields\n-Bumped Xray-core to v26.1.23\n-Improved DNS routing for better server connectivity\n-Fixed System Proxy and TUN state not persisting across restarts",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "2.0.5",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.0.5/setup-Happ.x64.exe",
-      "details": "-Improved subscription storage reliability and write safety\n-Improved per-app proxy settings description and visibility\b-Fixed System proxy and TUN toggle states not persisting across app restarts\n-Fixed DNS routing not respecting TUN DNS Enable setting\n-Fixed subscription link parameter parsing",
+      "version": "2.1.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.1.0/setup-Happ.x64.exe",
+      "details": "-Added Hysteria2 protocol support\n-Added context menu (Cut, Copy, Paste, Select All) for text fields\n-Bumped Xray-core to v26.1.23\n-Improved DNS routing for better server connectivity\n-Fixed System Proxy and TUN state not persisting across restarts",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
