@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 29,
+  "filenum": 30,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "2.1.0",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.1.0/setup-Happ.x64.exe",
-      "details": "-Added Hysteria2 protocol support\n-Added context menu (Cut, Copy, Paste, Select All) for text fields\n-Bumped Xray-core to v26.1.23\n-Improved DNS routing for better server connectivity\n-Fixed System Proxy and TUN state not persisting across restarts",
+      "version": "2.2.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.2.0/setup-Happ.x64.exe",
+      "details": "-Improved Hysteria2 protocol support\n-Added ARM64 platform support\n-Fixed DNS routing based on TUN DNS settings",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "2.1.0",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.1.0/setup-Happ.x64.exe",
-      "details": "-Added Hysteria2 protocol support\n-Added context menu (Cut, Copy, Paste, Select All) for text fields\n-Bumped Xray-core to v26.1.23\n-Improved DNS routing for better server connectivity\n-Fixed System Proxy and TUN state not persisting across restarts",
+      "version": "2.2.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.2.0/setup-Happ.x64.exe",
+      "details": "-Improved Hysteria2 protocol support\n-Added ARM64 platform support\n-Fixed DNS routing based on TUN DNS settings",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
