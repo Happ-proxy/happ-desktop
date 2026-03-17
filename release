@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 31,
+  "filenum": 32,
   "linux": {
     "block": [],
     "beta": {},
@@ -17,18 +17,18 @@
 	  "0.0.3"
     ],
     "beta": {
-      "version": "2.4.0",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.4.0/setup-Happ.x64.exe",
-      "details": "-Added fallback URL support for connections\n-Added Remote and Domestic TUN DNS options\n-Fixed crashes",
+      "version": "2.5.2",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.5.2/setup-Happ.x64.exe",
+      "details": "-Updated Xray core to version 26.2.6",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
       }
     },
     "stable": {
-      "version": "2.4.0",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.4.0/setup-Happ.x64.exe",
-      "details": "-Added fallback URL support for connections\n-Added Remote and Domestic TUN DNS options\n-Fixed crashes",
+      "version": "2.5.2",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.5.2/setup-Happ.x64.exe",
+      "details": "-Updated Xray core to version 26.2.6",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "0.0.21"
