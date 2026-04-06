@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 33,
+  "filenum": 35,
   "linux": {
     "block": [],
     "beta": {},
@@ -13,25 +13,59 @@
   },
   "windows": {
     "block": [
-      "0.0.4",
-	  "0.0.3"
+	  "2.4.0",
+	  "2.2.0",
+	  "2.1.0",
+	  "2.0.6",
+	  "2.0.5",
+	  "2.0.3",
+	  "2.0.2",
+	  "2.0.1",
+	  "2.0.0",
+	  "1.5.2",
+	  "1.5.1",
+	  "1.4.9",
+	  "1.4.7",
+	  "1.4.5",
+	  "1.4.2",
+	  "1.4.0",
+	  "1.2.6",
+	  "1.2.4",
+	  "1.2.2",
+	  "1.2.0",
+	  "1.1.0",
+	  "1.0.0",
+	  "0.7.1",
+	  "0.7.0",
+	  "0.6.0",
+	  "0.5.6",
+	  "0.5.5",
+	  "0.5.0",
+	  "0.4.6",
+	  "0.4.1",
+	  "0.4.0",
+	  "0.3.7",
+	  "0.3.6",
+	  "0.3.5",
+      "0.3.0",
+	  "0.2.6"
     ],
     "beta": {
-      "version": "2.6.0",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.6.0/setup-Happ.x64.exe",
-      "details": "-Fixed crash when backing up proxy settings on Windows\n-Fixed window position not restoring correctly when starting minimized\n-Fixed subscription URL handling with case-sensitive paths\n-Fixed deep links on macOS\n-Fixed encrypted subscription silently succeeding when decryption fails\n-Fixed subscription section expand behavior\n-Fixed announcement disappearing when subscription info updates",
+      "version": "2.7.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.7.0/setup-Happ.x64.exe",
+      "details": "-Improved server storage to use unique identifiers instead of name-based matching\n-Improved system sleep/wake recovery for VPN connections, subscriptions, and background services",
       "update": {
         "warnalways": "0.3.2",
-        "updateonly": "0.0.21"
+        "updateonly": "1.0.1"
       }
     },
     "stable": {
-      "version": "2.6.0",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.6.0/setup-Happ.x64.exe",
-      "details": "-Fixed crash when backing up proxy settings on Windows\n-Fixed window position not restoring correctly when starting minimized\n-Fixed subscription URL handling with case-sensitive paths\n-Fixed deep links on macOS\n-Fixed encrypted subscription silently succeeding when decryption fails\n-Fixed subscription section expand behavior\n-Fixed announcement disappearing when subscription info updates",
+      "version": "2.7.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.7.0/setup-Happ.x64.exe",
+      "details": "-Improved server storage to use unique identifiers instead of name-based matching\n-Improved system sleep/wake recovery for VPN connections, subscriptions, and background services",
       "update": {
         "warnalways": "0.3.2",
-        "updateonly": "0.0.21"
+        "updateonly": "1.0.1"
       }
     }
   }
