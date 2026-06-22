@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 41,
+  "filenum": 42,
   "linux": {
     "block": [],
     "beta": {},
@@ -51,27 +51,27 @@
 	  "0.2.6"
     ],
     "beta": {
-      "version": "2.17.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.17.1/setup-Happ.x64.exe",
-      "details": "-Added an Excluded routes screen in Advanced Settings with an inline CIDR editor\n-Added support for importing .json and .txt config files (alongside .happ)\n-Added automatic recovery of your system proxy if Happ closes unexpectedly, so you no longer lose internet access after a crash",
+      "version": "2.18.1",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.1/setup-Happ.x64.exe",
+      "details": "-Added support for Trojan gRPC+REALITY subscriptions\n-Added certificate pinning (by certificate hash or by name) for VLESS, Trojan, VMess, Shadowsocks, and Hysteria2",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
     "stable": {
-      "version": "2.17.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.17.1/setup-Happ.x64.exe",
-      "details": "-Added an Excluded routes screen in Advanced Settings with an inline CIDR editor\n-Added support for importing .json and .txt config files (alongside .happ)\n-Added automatic recovery of your system proxy if Happ closes unexpectedly, so you no longer lose internet access after a crash",
+      "version": "2.18.1",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.1/setup-Happ.x64.exe",
+      "details": "-Added support for Trojan gRPC+REALITY subscriptions\n-Added certificate pinning (by certificate hash or by name) for VLESS, Trojan, VMess, Shadowsocks, and Hysteria2",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
 	"beta_arm": {
-      "version": "2.17.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.17.1/setup-Happ.arm64.exe",
-      "details": "-Added an Excluded routes screen in Advanced Settings with an inline CIDR editor\n-Added support for importing .json and .txt config files (alongside .happ)\n-Added automatic recovery of your system proxy if Happ closes unexpectedly, so you no longer lose internet access after a crash",
+      "version": "2.18.1",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.1/setup-Happ.arm64.exe",
+      "details": "-Added support for Trojan gRPC+REALITY subscriptions\n-Added certificate pinning (by certificate hash or by name) for VLESS, Trojan, VMess, Shadowsocks, and Hysteria2",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
@@ -80,7 +80,7 @@
     "stable_arm": {
       "version": "2.18.1",
       "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.1/setup-Happ.arm64.exe",
-      "details": "-New version 18.1",
+      "details": "-Added support for Trojan gRPC+REALITY subscriptions\n-Added certificate pinning (by certificate hash or by name) for VLESS, Trojan, VMess, Shadowsocks, and Hysteria2",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
