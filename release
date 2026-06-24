@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 42,
+  "filenum": 43,
   "linux": {
     "block": [],
     "beta": {},
@@ -51,36 +51,36 @@
 	  "0.2.6"
     ],
     "beta": {
-      "version": "2.18.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.1/setup-Happ.x64.exe",
-      "details": "-Added support for Trojan gRPC+REALITY subscriptions\n-Added certificate pinning (by certificate hash or by name) for VLESS, Trojan, VMess, Shadowsocks, and Hysteria2",
+      "version": "2.18.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.3/setup-Happ.x64.exe",
+      "details": "-Internal fix",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
     "stable": {
-      "version": "2.18.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.1/setup-Happ.x64.exe",
-      "details": "-Added support for Trojan gRPC+REALITY subscriptions\n-Added certificate pinning (by certificate hash or by name) for VLESS, Trojan, VMess, Shadowsocks, and Hysteria2",
+      "version": "2.18.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.3/setup-Happ.x64.exe",
+      "details": "-Internal fix",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
 	"beta_arm": {
-      "version": "2.18.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.1/setup-Happ.arm64.exe",
-      "details": "-Added support for Trojan gRPC+REALITY subscriptions\n-Added certificate pinning (by certificate hash or by name) for VLESS, Trojan, VMess, Shadowsocks, and Hysteria2",
+      "version": "2.18.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.3/setup-Happ.arm64.exe",
+      "details": "-Internal fix",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
     "stable_arm": {
-      "version": "2.18.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.1/setup-Happ.arm64.exe",
-      "details": "-Added support for Trojan gRPC+REALITY subscriptions\n-Added certificate pinning (by certificate hash or by name) for VLESS, Trojan, VMess, Shadowsocks, and Hysteria2",
+      "version": "2.18.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/2.18.3/setup-Happ.arm64.exe",
+      "details": "-Internal fix",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
