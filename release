@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 49,
+  "filenum": 50,
   "linux": {
     "block": [],
     "beta": {},
@@ -51,36 +51,36 @@
 	  "0.2.6"
     ],
     "beta": {
-      "version": "4.1.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.1.3/setup-Happ.x64.exe",
-      "details": "-Update Xray Core to 26.7.28",
+      "version": "4.2.1",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.x64.exe",
+      "details": "-Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
     "stable": {
-      "version": "4.1.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.1.3/setup-Happ.x64.exe",
-      "details": "-Update Xray Core to 26.7.28",
+      "version": "4.2.1",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.x64.exe",
+      "details": "-Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
 	"beta_arm": {
-      "version": "4.1.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.1.3/setup-Happ.arm64.exe",
-      "details": "-Update Xray Core to 26.7.28",
+      "version": "4.2.1",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.arm64.exe",
+      "details": "-Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
     "stable_arm": {
-      "version": "4.1.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.1.3/setup-Happ.arm64.exe",
-      "details": "-Update Xray Core to 26.7.28",
+      "version": "4.2.1",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.arm64.exe",
+      "details": "-Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
