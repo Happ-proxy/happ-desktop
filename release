@@ -72,36 +72,36 @@
 	  "0.2.6"
     ],
     "beta": {
-      "version": "4.2.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.x64.exe",
-      "details": "-Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers",
+      "version": "4.3.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.3.0/setup-Happ.x64.exe",
+      "details": "-replacing the single global User-Agent option",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
     "stable": {
-      "version": "4.2.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.x64.exe",
-      "details": "-Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers",
+      "version": "4.3.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.3.0/setup-Happ.x64.exe",
+      "details": "-replacing the single global User-Agent option",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
 	"beta_arm": {
-      "version": "4.2.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.arm64.exe",
-      "details": "-Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers",
+      "version": "4.3.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.3.0/setup-Happ.arm64.exe",
+      "details": "-replacing the single global User-Agent option",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
     "stable_arm": {
-      "version": "4.2.1",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.2.1/setup-Happ.arm64.exe",
-      "details": "-Improved Xray TUN is now the default tunnel provider and appears first in the provider pickers",
+      "version": "4.3.0",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.3.0/setup-Happ.arm64.exe",
+      "details": "-replacing the single global User-Agent option",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
