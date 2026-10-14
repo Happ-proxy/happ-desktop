@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 53,
+  "filenum": 54,
   "linux": {
     "block": [],
     "beta": {},
@@ -52,8 +52,8 @@
 	  "0.2.6"
     ],
     "beta": {
-      "version": "4.5.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.5.3/setup-Happ.x64.exe",
+      "version": "4.5.4",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.5.4/setup-Happ.x64.exe",
       "details": "-updating the Xray core to version 26.9.9\n-Fixed subscriptions with a device limit not loading on some computers",
       "update": {
         "warnalways": "0.3.2",
@@ -61,8 +61,8 @@
       }
     },
     "stable": {
-      "version": "4.5.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.5.3/setup-Happ.x64.exe",
+      "version": "4.5.4",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.5.4/setup-Happ.x64.exe",
       "details": "-updating the Xray core to version 26.9.9\n-Fixed subscriptions with a device limit not loading on some computers",
       "update": {
         "warnalways": "0.3.2",
@@ -70,8 +70,8 @@
       }
     },
 	"beta_arm": {
-      "version": "4.5.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.5.3/setup-Happ.arm64.exe",
+      "version": "4.5.4",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.5.4/setup-Happ.arm64.exe",
       "details": "-updating the Xray core to version 26.9.9\n-Fixed subscriptions with a device limit not loading on some computers",
       "update": {
         "warnalways": "0.3.2",
@@ -79,8 +79,8 @@
       }
     },
     "stable_arm": {
-      "version": "4.5.3",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.5.3/setup-Happ.arm64.exe",
+      "version": "4.5.4",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.5.4/setup-Happ.arm64.exe",
       "details": "-updating the Xray core to version 26.9.9\n-Fixed subscriptions with a device limit not loading on some computers",
       "update": {
         "warnalways": "0.3.2",
