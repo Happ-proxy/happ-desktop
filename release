@@ -1,6 +1,6 @@
 {
   "app":"happ_desktop",
-  "filenum": 56,
+  "filenum": 57,
   "linux": {
     "block": [],
     "beta": {},
@@ -52,36 +52,36 @@
 	  "0.2.6"
     ],
     "beta": {
-      "version": "4.7.2",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.7.2/setup-Happ.x64.exe",
-      "details": "-updating Xray to version 26.10.29",
+      "version": "4.8.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.3/setup-Happ.x64.exe",
+      "details": "-Fix and Improvements",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
     "stable": {
-      "version": "4.7.2",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.7.2/setup-Happ.x64.exe",
-      "details": "-updating Xray to version 26.10.29",
+      "version": "4.8.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.3/setup-Happ.x64.exe",
+      "details": "-Fix and Improvements",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
 	"beta_arm": {
-      "version": "4.7.2",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.7.2/setup-Happ.arm64.exe",
-      "details": "-updating Xray to version 26.10.29",
+      "version": "4.8.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.3/setup-Happ.arm64.exe",
+      "details": "-Fix and Improvements",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
       }
     },
     "stable_arm": {
-      "version": "4.7.2",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.7.2/setup-Happ.arm64.exe",
-      "details": "-updating Xray to version 26.10.29",
+      "version": "4.8.3",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.3/setup-Happ.arm64.exe",
+      "details": "-Fix and Improvements",
       "update": {
         "warnalways": "0.3.2",
         "updateonly": "1.0.1"
