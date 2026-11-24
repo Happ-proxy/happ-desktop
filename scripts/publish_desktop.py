@@ -56,10 +56,8 @@ def source_name(name, version, build):
 def choose_builds(listings, version):
     builds = {}
     for platform, names in PLATFORMS.items():
-        candidates = names + (ZIPS + [x + '.sha256' for x in ZIPS]
-                              if platform == 'Windows' else [])
         numbers = []
-        for name in candidates:
+        for name in names:
             pattern = re.escape(source_name(name, version, 'BUILD')).replace('BUILD', r'(\d+)')
             for filename in listings[platform]:
                 match = re.fullmatch(pattern, filename)
@@ -76,7 +74,17 @@ def required_files(listings, version, builds, stable, installers=True):
     for platform, names in PLATFORMS.items():
         required = list(names) if installers else []
         if stable and platform == 'Windows':
-            required += ZIPS + [x + '.sha256' for x in ZIPS]
+            for zip_name in ZIPS:
+                zip_source = source_name(zip_name, version, builds[platform])
+                checksum_name = zip_name + '.sha256'
+                checksum_source = source_name(checksum_name, version, builds[platform])
+                if zip_source in listings[platform] and checksum_source in listings[platform]:
+                    required.extend((zip_name, checksum_name))
+                else:
+                    missing = [name for name in (zip_source, checksum_source)
+                               if name not in listings[platform]]
+                    log(f'Skipping silent update {zip_name}: missing {", ".join(missing)}. '
+                        'Existing link_silent and hash_silent will be preserved.')
         for name in required:
             source = source_name(name, version, builds[platform])
             if source not in listings[platform]:
@@ -110,8 +118,8 @@ def updated_document(original, repo, version, hashes, silent_links):
         values = {
             'version': version,
             'link': f'https://github.com/{repo}/releases/download/{version}/setup-Happ.{arch}.exe',
-            'hash_silent': hashes[arch],
-            'link_silent': silent_links[arch],
+            **({'hash_silent': hashes[arch], 'link_silent': silent_links[arch]}
+               if arch in hashes else {}),
         }
         changed |= any(block.get(key) != value for key, value in values.items())
         block.update(values)
@@ -315,9 +323,6 @@ def publish(github, cloud, version, stable, auto, description, directory):
         original, _ = github.read_document('main')
         updated_document(original, github.repo, version, {'x64': '', 'arm64': ''},
                          {'x64': '', 'arm64': ''})
-        silent = github.release('silent_update')
-        if not silent or silent.get('draft') or silent.get('immutable'):
-            raise PublishError('silent_update must exist, be published and allow adding assets')
     if data and data.get('completed'):
         log(f'Release {version} has already completed; no changes made.')
         return
@@ -332,6 +337,11 @@ def publish(github, cloud, version, stable, auto, description, directory):
         data = {'schema': 1, 'version': version, 'builds': choose_builds(listings, version)}
     published = bool(existing and not existing['draft'])
     files = required_files(listings, version, data['builds'], stable, installers=not published)
+    silent = None
+    if stable and any(name in ZIPS for _, _, name in files):
+        silent = github.release('silent_update')
+        if not silent or silent.get('draft') or silent.get('immutable'):
+            raise PublishError('silent_update must exist, be published and allow adding assets')
     expected_assets = {name for names in PLATFORMS.values() for name in names}
     if published:
         actual_assets = {asset['name'] for asset in github.assets(existing)}
@@ -344,16 +354,20 @@ def publish(github, cloud, version, stable, auto, description, directory):
         cloud.download(platform, source, directory / name)
     if stable:
         for arch in ('x64', 'arm64'):
+            if not any(name == f'update-Happ.{arch}.zip' for _, _, name in files):
+                continue
             path = directory / f'update-Happ.{arch}.zip'
             hashes[arch] = verify_zip(path, Path(str(path) + '.sha256').read_text(encoding='utf-8-sig'))
-        if data.get('hashes') and data['hashes'] != hashes:
+        previous_hashes = data.get('hashes', {})
+        if any(arch in previous_hashes and previous_hashes[arch] != value
+               for arch, value in hashes.items()):
             raise PublishError('ZIP contents changed since the previous attempt for this build')
-        data['hashes'] = hashes
+        data['hashes'] = {**previous_hashes, **hashes}
         silent_names = {arch: source_name(f'update-Happ.{arch}.zip', version, data['builds']['Windows'])
-                        for arch in ('arm64', 'x64')}
+                        for arch in hashes}
         silent_links = {arch: f'https://github.com/{github.repo}/releases/download/silent_update/'
                        + quote(name, safe='') for arch, name in silent_names.items()}
-        existing_silent = {asset['name']: asset for asset in github.assets(silent)}
+        existing_silent = {asset['name']: asset for asset in github.assets(silent)} if silent else {}
         for arch, name in silent_names.items():
             if name in existing_silent:
                 github.verify_existing_asset('silent_update', existing_silent[name], hashes[arch])
@@ -402,8 +416,8 @@ def publish(github, cloud, version, stable, auto, description, directory):
                 'title': f'release: update desktop to {version}', 'head': branch, 'base': 'main',
                 'body': f'Update Windows release metadata to {version}.\n\n'
                         f'Installers: {existing["html_url"]}\n\n'
-                        'Versioned silent_update ZIP files were added and SHA256-verified. '
-                        'link_silent points to each architecture\'s versioned ZIP; older assets are preserved. '
+                        'Available silent_update ZIP files were SHA256-verified and added. '
+                        'Silent-update fields change only for architectures with ZIP files. '
                         'This PR changes only release; filenum increases once.',
             })
         log(f'Release metadata PR: {open_pr["html_url"]}')

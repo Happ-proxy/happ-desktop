@@ -166,8 +166,49 @@ class PublisherTests(unittest.TestCase):
 
     def test_missing_matching_checksum(self):
         self.cloud.missing.add('update-Happ.x64.v4.9.0(100).zip.sha256')
-        with self.assertRaisesRegex(p.PublishError, 'missing update-Happ'):
-            self.run_publish(True)
+        self.run_publish(True)
+        result = self.gh.documents['main']['windows']
+        for channel in ('beta', 'stable'):
+            self.assertEqual(result[channel]['link_silent'], 'unchanged')
+            self.assertEqual(result[channel]['hash_silent'], 'old')
+            self.assertEqual(result[channel]['version'], '4.9.0')
+        self.assertIn('arm64.v4.9.0', result['stable_arm']['link_silent'])
+        self.assertEqual(sum(tag == 'silent_update' for tag, _ in self.gh.uploads), 1)
+        self.assertFalse(any('update-Happ.x64' in name for name in self.cloud.downloads))
+
+    def test_missing_zip_with_remaining_checksum_is_skipped(self):
+        self.cloud.missing.add('update-Happ.arm64.v4.9.0(100).zip')
+        self.run_publish(True)
+        result = self.gh.documents['main']['windows']
+        for channel in ('beta_arm', 'stable_arm'):
+            self.assertEqual(result[channel]['link_silent'], 'unchanged')
+            self.assertEqual(result[channel]['hash_silent'], 'old')
+        self.assertEqual(sum(tag == 'silent_update' for tag, _ in self.gh.uploads), 1)
+
+    def test_no_silent_files_still_publishes_all_installers(self):
+        for auto in (True, False):
+            with self.subTest(auto=auto):
+                self.gh = FakeGitHub()
+                del self.gh.releases['silent_update']
+                self.cloud = Cloud()
+                for name in p.ZIPS:
+                    for suffix in ('', '.sha256'):
+                        self.cloud.missing.add(p.source_name(name + suffix, '4.9.0', 100))
+                self.run_publish(True, auto)
+                branch = 'main' if auto else 'codex/release-4.9.0'
+                result = self.gh.documents[branch]
+                self.assertEqual(result['filenum'], 59)
+                for block in result['windows'].values():
+                    self.assertEqual(block['link_silent'], 'unchanged')
+                    self.assertEqual(block['hash_silent'], 'old')
+                    self.assertEqual(block['version'], '4.9.0')
+                self.assertEqual(len(self.gh.uploads), 9)
+                self.assertTrue(all(tag == '4.9.0' for tag, _ in self.gh.uploads))
+
+    def test_optional_updates_do_not_select_installer_build(self):
+        listings = {platform: self.cloud.listing(platform) for platform in p.PLATFORMS}
+        listings['Windows'].add('update-Happ.x64.v4.9.0(999).zip')
+        self.assertEqual(p.choose_builds(listings, '4.9.0')['Windows'], 100)
 
     def test_prerelease_ignores_auto_setting_and_missing_zips(self):
         for auto in (True, False):
@@ -200,8 +241,8 @@ class PublisherTests(unittest.TestCase):
                 self.assertEqual(block[key], before['windows'][channel][key])
         self.assertEqual(result['linux'], before['linux'])
         self.assertEqual(result['macos'], before['macos'])
-        self.assertEqual(self.gh.uploads[-2:], [('silent_update', p.source_name(name, '4.9.0', 100))
-                                              for name in p.ZIPS])
+        self.assertEqual(set(self.gh.uploads[-2:]), {('silent_update', p.source_name(name, '4.9.0', 100))
+                                                   for name in p.ZIPS})
         self.run_publish(True)
         self.assertEqual(self.gh.writes, ['main'])
 
