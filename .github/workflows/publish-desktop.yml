@@ -1,0 +1,51 @@
+name: Publish desktop builds
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version / release tag (e.g. 4.9.0)'
+        required: true
+        type: string
+      Release:
+        description: 'Publish Latest and update Windows automatic updates'
+        default: false
+        type: boolean
+      autoRelease:
+        description: 'Commit release directly to main (otherwise create a PR)'
+        default: true
+        type: boolean
+      description:
+        description: 'Release notes'
+        default: comming soon
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: desktop-release-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test publisher
+        run: python -m unittest discover -s tests -v
+      - name: Download and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEXTCLOUD_USERNAME: ${{ secrets.NEXTCLOUD_USERNAME }}
+          NEXTCLOUD_PASSWORD: ${{ secrets.NEXTCLOUD_PASSWORD }}
+          INPUT_VERSION: ${{ inputs.version }}
+          INPUT_RELEASE: ${{ inputs.Release }}
+          INPUT_AUTO_RELEASE: ${{ inputs.autoRelease }}
+          INPUT_DESCRIPTION: ${{ inputs.description }}
+        run: python scripts/publish_desktop.py
