@@ -1,6 +1,6 @@
 {
   "app": "happ_desktop",
-  "filenum": 59,
+  "filenum": 60,
   "linux": {
     "block": [],
     "beta": {},
@@ -52,8 +52,8 @@
       "0.2.6"
     ],
     "beta": {
-      "version": "4.8.7",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.7/setup-Happ.x64.exe",
+      "version": "4.8.8",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.8/setup-Happ.x64.exe",
       "link_silent": "https://github.com/Happ-proxy/happ-desktop/releases/download/silent_update/update-Happ.x64.zip",
       "hash_silent": "02537a1d1b589a6e95f232ef11ff7b9a2f4d88d30e048959da9cce8e4fceebd2",
       "details": "-Fix and Improvements",
@@ -63,8 +63,8 @@
       }
     },
     "stable": {
-      "version": "4.8.7",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.7/setup-Happ.x64.exe",
+      "version": "4.8.8",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.8/setup-Happ.x64.exe",
       "link_silent": "https://github.com/Happ-proxy/happ-desktop/releases/download/silent_update/update-Happ.x64.zip",
       "hash_silent": "02537a1d1b589a6e95f232ef11ff7b9a2f4d88d30e048959da9cce8e4fceebd2",
       "details": "-Fix and Improvements",
@@ -74,8 +74,8 @@
       }
     },
     "beta_arm": {
-      "version": "4.8.7",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.7/setup-Happ.arm64.exe",
+      "version": "4.8.8",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.8/setup-Happ.arm64.exe",
       "link_silent": "https://github.com/Happ-proxy/happ-desktop/releases/download/silent_update/update-Happ.arm64.zip",
       "hash_silent": "2b09765de94744a86810f48afc5e43d1a752e85daa5440afc4f11ca6c1d1c724",
       "details": "-Fix and Improvements",
@@ -85,8 +85,8 @@
       }
     },
     "stable_arm": {
-      "version": "4.8.7",
-      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.7/setup-Happ.arm64.exe",
+      "version": "4.8.8",
+      "link": "https://github.com/Happ-proxy/happ-desktop/releases/download/4.8.8/setup-Happ.arm64.exe",
       "link_silent": "https://github.com/Happ-proxy/happ-desktop/releases/download/silent_update/update-Happ.arm64.zip",
       "hash_silent": "2b09765de94744a86810f48afc5e43d1a752e85daa5440afc4f11ca6c1d1c724",
       "details": "-Fix and Improvements",
